@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<head>
+    <title>Hand-Gesture Recognition</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+    <link href="style.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&display=swap');
+    </style>
+</head>
+
+<body>
+    <center>
+        <div id="title_div">
+            <h1 id="heading">Hand-Gesture Recognition<br>
+                <span>&#128076;</span>
+                <span>&#128075;</span>
+                <span>&#128077;</span>
+                <span>&#128079;</span>
+                <span>&#9996;</span>
+                <span>&#129311;</span>
+            </h1>
+        </div>
+
+        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+            <h3><span style="font-size:30px; color:greenyellow;">Camera - </span><br>Make one of the hand-gestures in front of the camera:</h3>
+            <div id="camera"></div>
+            <button id="snap_b" class="btn btn-warning" onclick="snap();">SNAP</button>
+        </div>
+
+        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+            <h3>This model is trained for the following hand-gestures:</h3>
+            <div id="list_gestures">
+                <h3><span>&#128076;</span> - Amazing</h3>
+                <h3><span>&#128077;</span> - Best</h3>
+                <h3><span>&#9996;</span> - Victory</h3>
+            </div>
+            <br>
+            <h3 style="color:green; border-radius:5px; background-color:whitesmoke; width:50%;">Prediction:</h3>
+            <h3 id="prediction"></h3>
+            <h1><span id="result_emoji"></span></h1>
+        </div>
+
+        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+            <h3><span style="font-size:30px; color:palegoldenrod;">Result - </span><br>Here is the image you took:</h3>
+            <br>
+            <div id="result"></div>
+            <br>
+            <button id="snap_b" class="btn btn-success" onclick="predict();">Predict</button>
+        </div>
+        
+    </center>
+    <script src="main.js"></script>
+</body>
+
+</html>

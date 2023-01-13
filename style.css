@@ -1,0 +1,21 @@
+body{
+    font-family:'Comfortaa', cursive;
+    background-color:lightblue;
+}
+
+#title_div{
+    background-color: blanchedalmond;
+    border:5px orange solid;
+}
+
+#list_gestures{
+    background-color:whitesmoke;
+    border-radius:10px;
+    width:100%;
+    padding:2px;
+}
+
+#snap_b{
+    font-size:30px;
+    border-radius:20px;
+}
